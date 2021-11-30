@@ -16,7 +16,7 @@ ModuleSceneIntro::~ModuleSceneIntro()
 bool ModuleSceneIntro::Start()
 {
 	fondo = App->textures->Load("Assets/Fondo1.png");
-	canyon = App->textures->Load("Assets/Canyon.png");
+	soldado1 = App->textures->Load("Assets/Soldado1.png");
 	bola = App->textures->Load("Assets/Bola.png");
 
 	LOG("Loading Intro assets");
@@ -39,7 +39,7 @@ bool ModuleSceneIntro::CleanUp()
 update_status ModuleSceneIntro::Update()
 {
 	App->renderer->Blit(fondo, 60, 0, NULL);
-	App->renderer->Blit(canyon, 150, 650, NULL);
+	App->renderer->Blit(soldado1, 150, 650, NULL);
 	App->renderer->Blit(bola, 300, 600, NULL);
 
 	return UPDATE_CONTINUE;
