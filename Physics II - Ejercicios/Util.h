@@ -24,4 +24,17 @@ namespace E3D {
 		EInt ran = rand() % (to - from + 1) + from;
 		return ran;
 	}
+	inline EInt StringToInt(const EString& str) {
+		return atoi(str.c_str());
+	}
+	inline EFloat StringToFloat(const EString& str) {
+		return (EFloat)atof(str.c_str());
+	}
+	inline EWString ToEWString(const EString& str) {
+		int wcsLen = ::MultiByteToWideChar(CP_ACP, NULL, str.c_str(), str.size(), NULL, 0);
+		WCHAR* tString = new WCHAR[wcsLen + 1];
+		::MultiByteToWideChar(CP_ACP, NULL, str.c_str(), str.size(), tString, wcsLen);
+		tString[wcsLen] = '\0';
+		return EWString(tString);
+	}
 }

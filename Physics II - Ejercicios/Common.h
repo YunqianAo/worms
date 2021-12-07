@@ -29,9 +29,9 @@ namespace E3D {
 
 	const EString DEFAULT_NAME = "E3D_Default";
 	const EString DefaultPath = "Media/";
-	static EString GetPath(const EString& file){
+	static EString GetPath(const EString& file) {
 		return DefaultPath + file;
-    }
+	}
 
 
 #define PI 3.141592654f
@@ -77,8 +77,5 @@ namespace E3D {
 
 			return EColor(ri, gi, bi, ai);
 		}
-	}
-
-
-
+	};
 }
