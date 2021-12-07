@@ -63,8 +63,21 @@ namespace E3D {
 			b = (unsigned char)(color & 0x0000ff);
 			a = alpha;
 		}
-	};
 
+
+		EColor(EUChar ri = 0, EUChar gi = 0, EUChar bi = 0, EUChar ai = 255) :r(ri), g(gi), b(bi), a(ai) {
+		}
+
+		EInt ToInt() const { return ECOLOR_16BIT(r, g, b); }
+		EColor operator *(const EColor& c) const {
+			EInt ri = r * c.r >> 8;
+			EInt gi = g * c.r >> 8;
+			EInt bi = b * c.r >> 8;
+			EInt ai = a * c.a >> 8;
+
+			return EColor(ri, gi, bi, ai);
+		}
+	}
 
 
 
