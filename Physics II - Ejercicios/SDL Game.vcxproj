@@ -74,6 +74,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="Globals.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="AABB.h" />
     <ClInclude Include="ModulePhysics.h" />
     <ClInclude Include="p2List.h" />
     <ClInclude Include="Module.h" />
