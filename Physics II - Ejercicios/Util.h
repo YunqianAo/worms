@@ -37,4 +37,28 @@ namespace E3D {
 		tString[wcsLen] = '\0';
 		return EWString(tString);
 	}
+	inline EBool EqualFloat(EFloat l, EFloat r) {
+		return abs(l - r) <= EPSILON_E6;
+	}
+	inline EString GetNameFreomPath(const EString& path) {
+		size_t beg = path.find_last_of("\\/");
+		size_t end = path.find_last_of(".");
+		if (beg == EString::npos) {
+			beg = -1;
+		}
+		return path.substr(beg + 1, end - beg - 1);
+	}
+	inline EString Trim(const EString &msg) {
+		const static EString SPACE_CHAR = "\t\f\v\n\r";
+		size_t beg = msg.find_first_not_of(SPACE_CHAR);
+		if (beg > msg.length()) {
+			return EString();
+		}
+		EString result = msg.substr(beg);
+		size_t end = result.find_last_not_of(SPACE_CHAR);
+		if (end != EString::npos) {
+			end++;
+			return result.substr(0, end);
+		}
+	}
 }

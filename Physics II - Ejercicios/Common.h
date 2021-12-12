@@ -44,11 +44,11 @@ namespace E3D {
 #define Radian_To_Degree(rad) (rad*57.295780f)
 
 #define Abs(a)((a)>0?(a):-(a))
-
+#define EPSILON_E6 (float)(1E-6)
 #define KEY_DOWN(vk_code)((GetAsyncKeyState(vk_code)&0x8000)?1:0)
 #define KEY_UP(vk_code)((GetAsyncKeyState(vk_code)&0x8000)?1:0)
 
-#define SafeDelete(ptr) if(prt){delete ptr; ptr=0;}
+#define SafeDelete(ptr) if(ptr){delete ptr; ptr=0;}
 #define SafeDeleteArray(prt) if(ptr){delete prt;ptr=0;}
 
 #define COUT(a) cout<<#a<<":"<<(a)<<endl;
