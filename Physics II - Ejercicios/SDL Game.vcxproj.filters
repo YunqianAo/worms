@@ -118,5 +118,8 @@
     <ClCompile Include="Matrix.h">
       <Filter>Header Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Header Files\Engine</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
