@@ -12,9 +12,6 @@
     <Filter Include="Header Files\Containers">
       <UniqueIdentifier>{97c4111e-b102-4ba8-9053-6f07ccbbe3d4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Engine">
-      <UniqueIdentifier>{5c40d450-fece-4f90-9949-03f09c5706e5}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -59,21 +56,6 @@
     <ClInclude Include="ModulePhysics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Body.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Common.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Util.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="AABB.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -108,18 +90,6 @@
     </ClCompile>
     <ClCompile Include="ModulePhysics.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Body.cpp">
-      <Filter>Header Files\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="Util.cpp">
-      <Filter>Header Files\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Header Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

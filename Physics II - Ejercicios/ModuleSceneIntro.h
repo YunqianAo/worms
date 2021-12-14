@@ -57,7 +57,7 @@ public:
 	PhysBody* background;
 	SDL_Texture* fondo;
 	SDL_Texture* bola;
-	SDL_Texture* soldado1;
+	SDL_Texture* canyon;
 
 	Bouncer bouncer1;
 	Bouncer bouncer2;
